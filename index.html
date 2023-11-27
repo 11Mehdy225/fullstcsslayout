@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>docplaner</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="/image/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="/css/styles.css">
+        <!--la police via google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Roboto:ital,wght@1,500&family=Work+Sans:wght@100&display=swap" 
+        rel="stylesheet">
+    </head>
+    <body>
+        <!--nous aurons ici notre logo et notre menu-->
+        <header >
+            <img class="logodoc" src="/image/logo1.png" alt="logoDocPlanner" >
+            <nav>
+                <a href="">About us</a>
+                <a href="">Career</a>
+                <a href="">departments</a>
+            </nav>
+        </header>
+        <!--nous aurons ici notre corps de site-->
+        <main>
+            <!--la prmeiere section de site qui aura 2div enfants pour les textes dintro-->
+            <section class="section1">
+                <!--le logo-->
+                <div class="logoDevise">
+                    <img src="/image/logo.png" alt="logo">
+                    <br>
+                    <!--le texte introductif-->
+                    <h1>Making the healthcare experience more human</h1>
+                </div>
+            </section>
+            <!--nous   expliquons les missions et cela se presente sur 2 paragraphes cote a cote-->
+            <section class="section2"> 
+                    <p>We want patients to find the perfect doctor and book an appointment 
+                        in the most easy way. 
+                        The patient journey should be enjoyable, and that's why 
+                        we are always next to them: to help them find the best possible care. 
+                        Anytime, anywhere.
+                    </p>
+                    <p>We also help doctors to better manage their practice and build their online 
+                        reputation. With our integrated end-to-end solution, doctors are able not only
+                         to improve their online presence, but also to devote their time to what really 
+                         matters: their patients.
+                    </p>
+            </section>
+            <!--une presentation sous form de 3 categorie  dans 3div differentes qui apparaitrons cote a cote-->
+            <!--chacune a un texte en h1 un autre en h1 puis une liste selective-->
+            <section class="section3" id="fondu">
+                <div class="lesPatients" style="background-color: #00b39b;">
+                    <img src="/image/patients.png" alt="patientsIcone">
+                    <h1>For patients</h1>
+                    <br>
+                    <h2>Find a doctor, book a visit and solve any health-related doubt</h2>
+                    <br>
+                    <select name="country" id="country">
+                        <option value="">choose country</option>
+                        <option value="ghana">ghana</option>
+                      </select>
+
+                </div>
+                <div class="lesDocteurs" style="background-color: #3d83df;">
+                    <img src="/image/doc.jpg" alt="docteursIcone">
+                    <h1>For doctors</h1>
+                    <br>
+                    <h2>Save time managing visits and cut no-shows by half</h2>
+                </div>
+                <div class="lesclinique" style="background-color: #1b2734;">
+                    <img src="/image/cli.jpg" alt="cliniqueIcone">
+                    <h1>For clinics</h1>
+                    <br>
+                    <h2>Deliver an exceptional patient experience in your clinic</h2>
+                </div>
+           </section>
+           <!--ici nous avons une section de div dedié aux partenanire , ici nous allons introduire dans la premier div -->
+           <!--et dans la seconde mettre les logo des partenaire ces div apparaitrons cote a cote -->
+           <!--les logo partenaires sont disposé dans une liste non ordonnée-->
+           <section class="section4">
+
+            <div class="brandSection">
+                <h1>we are a global 
+                    <br> company
+                    <br>with local culture
+                </h1>
+            </div>
+            <div class="brand_logo">
+                
+               <a href=""><img src="https://www.docplanner.com/logos/logo-jameda.svg" alt="logo-jameda"></a> 
+               <a href=""><img src="https://www.docplanner.com/logos/logo-clinicloud.svg" alt="logo-clinicloud"></a>
+               <a href=""><img src="https://www.docplanner.com/logos/logo-feegow.svg" alt="logo-feegow"></a> 
+               <a href=""><img src="https://www.docplanner.com/logos/logo-feegow.svg" alt="logo-feegow"></a> 
+               <a href=""><img src="https://www.docplanner.com/logos/logo-feegow.svg" alt="logo-feegow"></a> 
+              
+            </div>
+         </section>
+         <!--cette section comprend les statistiques -->
+         <section class="section5">
+            <!--div de class section5prime qui comprend 2 div container une 
+            qui annonce les statistique et une autre pour les statistique-->
+            <div class="intro ">
+              <!-- la div qui annonce les statistique-->
+           <div class="introstat">
+            <h1 style="color:#00b39b; font-family: 'Prompt', sans-serif;">
+              La plus grande plateforme </h1>
+              <h1 style="color:#00b39b; font-family: 'Prompt', sans-serif;">
+                de soins de santé au monde</h1>
+            <p style="color:black; font-family: 'Prompt', sans-serif;">
+              <strong> travaillons à partir de 9 bureaux</strong>
+              <p style="color:black; font-family: 'Prompt', sans-serif;"><strong> dans le monde entier,
+               donnant vie au groupe Docplanner</strong></p>
+               <p style="color:black; font-family: 'Prompt', sans-serif;"><strong> 13 pays.</strong></p>
+               <br/>
+            </div>
+            </div>
+            <!--la div pour les statistique elle a 4 div enfant-->
+            <div class="stat">
+                <div class="groupe1">
+                    <div class="stat1">
+                        <img src="/image/flag.png" class="flag">
+                        <br/>
+                        <h2 style="color:#00b39b; font-family: 'Prompt', sans-serif;">leader dans 13 pays</h2>
+                        <p style="color:#00b39b; font-family: 'Prompt', sans-serif;">
+                         Pologne, Brésil, Mexique, Espagne, Italie, Allemagne,
+                        </p>
+                    </div>
+                    <div class="stat2">
+                        <img src="/image/visits.png" class="visits">
+                        <br/>
+                        <h2 style="color:#00b39b; font-family: 'Prompt', sans-serif;">15 000 000 rendez-vous</h2>
+                        <p style="color:#00b39b; font-family: 'Prompt', sans-serif;">
+                        réservé le mois dernier
+                        </p>
+                    </div>
+                </div>
+
+                <div class="groupe2">
+                    <div class="stat3">
+                        <img src="/image/patients.png" class="patients">
+                        <br/>
+                        <h2 style="color:#00b39b; font-family: 'Prompt', sans-serif;">
+                          90 000 000 malades</h2>
+                        <p style="color:#00b39b; font-family: 'Prompt', sans-serif;">
+                          visitez nos sites Web chaque mois
+                        </p>
+                    </div>
+                    <div class="stat4">
+                        <img src="/image/doctors.png" class="docteur">
+                        <br/>
+                        <h2 style="color:#00b39b; font-family: 'Prompt', sans-serif;">
+                        210 000 médecins actifs</h2>
+                        <p style="color:#00b39b; font-family: 'Prompt', sans-serif;">
+                         faites confiance à nos solutions
+                        </p>
+                    </div>
+                </div>
+               </div>
+            </section>
+            <section class="section6">
+                <h2 style="color:#00b39b; font-family: 'Prompt', sans-serif;">
+                    Améliorer la vie de millions de personnes.
+                    <br/>
+                      Changez la vôtre pour toujours.
+                    </h2>
+                      <br/>
+                  <p style="color:gray; font-family: 'Prompt', sans-serif;">
+                    Plus de 2800 coéquipiers partagent notre même vision, objectifs et passion.
+                    <br/> 
+                    Avec des bureaux à Varsovie, Barcelone, Munich, Istanbul, Rome, Rio, 
+                    Bologne, Mexico 
+                    <br/>
+                    et Curitiba, notre recherche de grands talents ne s'arrête jamais.
+                  </p>
+            </section>
+
+            <!--nos images avec legendes -->
+          <section class="section7">
+            <div class="office1">
+              <a href="#">
+                <figure>
+                  <img src="/image/les capitales/basilique.jpg" alt="basilique" class="offim">
+                  <figcaption class="figcaption">Yakro<button class="plus">voir les ouvertures</button></figcaption>
+                </figure>
+              </a>
+           </div>
+           <div class="office1">
+            <a href="#">
+              <figure>
+                <img src="/image/les capitales/afriqueds.jpg" alt="afriqueds" class="offim">
+                <figcaption class="figcaption">soweto<button class="plus">voir les ouvertures</button></figcaption>
+              </figure>
+            </a>
+            </div>
+            <div class="office1">
+            <a href="#">
+            <figure>
+              <img src="/image/les capitales/egypte.jpg" alt="egypte" class="offim">
+              <figcaption class="figcaption">caire<button class="plus">voir les ouvertures</button></figcaption>
+            </figure>
+            </a>
+            </div>
+            <div class="office1">
+                <a href="#">
+                <figure>
+                <img src="/image/les capitales/dakar.jpg" alt="dakar" class="offim">
+                <figcaption class="figcaption">dakar<button class="plus">voir les ouvertures</button></figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="office1">
+                <a href="#">
+                <figure>
+                <img src="/image/les capitales/benin.jpg" alt="benin" class="offim">
+                <figcaption class="figcaption">cotonou<button class="plus">voir les ouvertures</button></figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="office1">
+                <a href="#">
+                <figure>
+                <img src="/image/les capitales/burkina.jpg" alt="burkina" class="offim">
+                <figcaption class="figcaption">ouaga<button class="plus">voir les ouvertures</button></figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="office1">
+                <a href="#">
+                <figure>
+                <img src="/image/les capitales/ghana.jpg" alt="ghana" class="offim">
+                <figcaption class="figcaption">accra<button class="plus">voir les ouvertures</button></figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="office1">
+                <a href="#">
+                <figure>
+                <img src="/image/les capitales/nigeria.jpg" alt="nigeria" class="offim">
+                <figcaption class="figcaption">lagos<button class="plus">voir les ouvertures</button></figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="office1">
+                <a href="#">
+                <figure>
+                <img src="/image/les capitales/tanzanie.jpg" alt="tanzanie" class="offim">
+                <figcaption class="figcaption">uhuru<button class="plus">voir les ouvertures</button></figcaption>
+                </figure>
+                </a>
+            </div>
+        </section>
+          <section class="section8">
+            <h2 style="color:black; font-family: 'Prompt', sans-serif;">
+              Ça a l'air intéressant? Rejoignez nous
+              <br/>
+              maintenant!
+              </h2>
+              <br/>
+
+              <button class="bluebutton">VOIR TOUTES LES OUVERTURES EN COURS</button>
+          </section>
+        </main>
+        <footer class="footer">
+            <p class="leader">Nous sommes leaders dans 13 pays : 
+              <a href="#">Côte d'Ivoire</a>, 
+              <a href="#">Ghana</a>, 
+              <a href="#">Nigeria</a>, 
+              <a href="#">Afrique du Sud</a>, 
+              <a href="#">Égypte</a>, 
+              <a href="#">Burkina</a>, 
+              <a href="#">Sénégal</a>, 
+              <a href="#">Tanzanie</a>, 
+              <a href="#">Bénin</a>.
+            </p>
+              <p class="leader">copyright juin2023/abidjan//RONNA-GROUP/LOIC KONAN</p>
+          </footer>
+    </body>
+
+</html>

@@ -1,0 +1,376 @@
+/*definir les valeurs de base pour les balises racines*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width:auto;
+}
+
+/*declarons des variables a utiliser tout au long de notre code*/
+/*couleur et polices*/
+:root{
+    --police:'Prompt', sans-serif;
+    --vert:#00b39b;
+    --bleu:#3d83df;
+    --bleuNuit:#1b2734;
+    --gris:rgba(128, 128, 128, 0.861);
+
+}
+
+/*l'animation de fondu que nous allons utiliser pour certains elements*/
+/*ils seront appelé via 'ID fondu*/
+#fondu {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  /*les keyframes pour la transition transform y travaille sur laxe des y*/
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+/*notre header qui a le logo et notre barre de navigation*/
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;  
+    justify-content: space-around;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: box-shadow .25s ease 0s;
+    z-index: 2;
+}
+
+/*le logo*/
+
+.logodoc {
+    width: 250px;
+    height: 60px;
+    
+}
+
+nav{
+    
+    
+}
+nav a {
+    text-decoration: none;
+    font-family: var(--police);
+    color:var(--gris);
+    font-weight: 1000px;
+    font-size: 20px;
+}
+/*les curseurs au survol*/
+a:hover {
+    color:var(--vert);
+}
+
+/*notre premiere section pour le logo et le texte intro*/
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+/*la div logo et devise */
+/*flex pour la flex box  je mets ces enfants en colonne je les centre et je leur
+ mets un margintop pour lespace en haut au niveay du viewport je leur attribue une largeur*/
+.logoDevise {
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 600px;   
+}
+/*les propriétés de l'image*/
+.logoDevise img {
+    width:100px ;
+    height:100px;
+}
+/*le texte devise en bas de l'image*/
+.logoDevise h1 {
+  font-family: var(--police);
+  color: var(--vert);
+  
+}
+
+/*le texte d'intro*/
+.section2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto ;
+  text-align: center;
+  width:1000px;
+}
+
+
+/*les textes dans des paragraphes*/
+.section2 p {
+  width: 400px;
+  height: 200px;
+  font-family: var(--police);
+}
+
+/*la section 3 qui comporte les avantages */
+
+.section3{
+display: flex;
+flex-direction: row;
+justify-content:center;
+align-items: center;
+margin-top: 10px;
+}
+
+/*les div des sections*/
+.lesPatients , .lesDocteurs, .lesclinique{
+color:white;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 280px;
+height: 400px;
+margin-left: 20px;
+border-radius: 5%;
+}
+
+/*les meme proprietes aux images de nos 3divs*/
+.lesPatients img,.lesDocteurs img,.lesclinique img {
+  height: 50px;
+  width: 50px;
+}
+
+h1 , h2 {
+  font-family: var(--police);
+  font-weight:10px ;
+}
+
+/*le selecteur*/
+label {
+  font-family:var(--police);
+  font-size: 1rem;
+  padding-right: 10px;
+  border: none;
+}
+
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+  
+}
+
+/*les partenaires */
+
+.section4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.brand_logo {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  margin-left: 20px;
+  width: 50%;
+
+}
+
+/*les logo des partenaires*/
+ a img {
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 20;
+}
+
+.brandSection h1{
+  color: var(--vert);
+  font-family: var(--police);
+}
+  /*la section 5 qui contient les statistiques*/
+  .section5 {
+    background-image: url('/image/backgroung.png');
+     background-repeat: no-repeat;
+     background-size: cover;   
+  }
+
+  .section5 {
+    display: flex;
+     margin-top: 50px auto;
+     align-items: center;
+     justify-content: space-between;
+  }
+  /*notre div qui contient tout les elements de la statistique */
+  .intro {
+              display: flex;
+              flex-direction: column;
+    }
+  
+   
+  
+
+  /*notre premiere grande div  qui annonce les statistiques*/ 
+  .introstat h1 {
+    margin: 0;
+  }
+  .introstat {
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 50px;
+  }
+  /*les statistiques nous en avons 4 chacune dans une div stat conteneur gle et enfant stat1 stat2 stat3 stat4*/
+ 
+/*les statistiques nous en avons 4 chacune dans une div stat conteneur gle et enfant stat1 stat2 stat3 stat4*/
+.stat {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-right: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/*les differentes div de nos statistique*/
+
+/*la taille des div */
+.stat1,.stat2, .stat3, .stat4 {
+    width: 250px;
+    height: 30s0px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.05);
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;   
+}
+
+/*positionnons chaque div a travers le decalage de celles ci */
+
+.stat1 {
+  margin: 20px 25px 25px 5px;
+}
+
+.stat2{
+  margin-left:5px ;
+  margin-bottom:20px ;
+}
+
+.stat3 {
+  margin : 5px 24px 10px 20px;
+}
+
+.stat4 {/*top right bottom left*/
+  margin: 25px 25px 25px 20px;
+}
+/*la section 6*/
+.section6{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+}
+
+/*la section 7 qui comprend les villes */
+.section7 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px auto ;
+ }
+
+ .section7 a {
+  text-decoration: none;
+ }
+/*div des images des villes */
+.office1{
+  margin-top: 20px;
+}
+/*les images des villes*/
+ .offim {
+      width: 293px;
+      height: 270px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin-left: 10px;
+      z-index: 0;
+ }
+ /*les div figure et leur legendes*/
+ figure {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  
+ }
+ .figcaption {
+  font-family: 'Prompt', sans-serif;
+  text-transform: capitalize;
+ }
+ 
+
+ /*les boutons des legendes*/
+ .plus {
+  margin-left: 70px;
+  margin-top: 25px;
+  background-color:#3d83df;
+  color: #fff;
+  font-family: 'Prompt', sans-serif;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+ }
+
+ .plus:hover {
+  background-color: #011f46;
+ }
+
+ .section8 {
+  margin-top: 50px;
+  text-align: center;
+ }
+ /*Le boutton*/
+ .bluebutton {
+  background-color:#3d83df;
+  color: #fff;
+  font-family: 'Prompt', sans-serif;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+ }
+
+ /*notre footer*/
+ footer {
+  border-top: 1px solid grey;
+  margin-top: 20px;
+  width: 100%;
+ }
+ .leader {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+ }
+
